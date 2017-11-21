@@ -1,7 +1,23 @@
-
+@keyframes roundWheel{
+    0%{
+        transform: rotate(0deg);
+        left:0;
+    }
+    50%{
+        transform: rotate(180deg);
+        left:100px;
+    }
+    100%{
+        transform: rotate(0deg);
+        left:0;
+    }
+}
 
 .wheel {
     height: 100px;
     width: 100px;
-
+    animation: roundWheel 5s linear 0s infinite;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
